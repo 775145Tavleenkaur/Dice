@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textplayer"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/dice1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_below="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/computer"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textplayer"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/dice1" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_below="@+id/rel2"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="80dp">
+        <Button
+            android:id="@+id/btn_higher"
+            android:text="high"
+            android:textSize="18sp"
+            android:layout_marginEnd="18dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_lower"
+            android:text="low"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textresult"
+        android:layout_below="@+id/lin1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

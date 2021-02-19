@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btn_high">Higher</string>
+    <string name="btn_low">Lower</string>
+    <string name="hooman">Player</string>
+    <string name="computer">Computer</string>
+    <string name="win">You Won</string>
+    <string name="loss">Computer Won</string>
+    <string name="tie">Its Tie</string>
+</resources>
